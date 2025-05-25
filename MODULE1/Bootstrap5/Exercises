@@ -366,3 +366,500 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
   </div>
 </body>
 </html>
+
+//ex-9.2
+<!-- ex9-2-button-groups.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Button Groups</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container my-5">
+    <h4>Button Group</h4>
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-primary">Left</button>
+      <button type="button" class="btn btn-primary">Middle</button>
+      <button type="button" class="btn btn-primary">Right</button>
+    </div>
+
+    <h4 class="mt-4">Toggle Buttons (Checkbox)</h4>
+    <div class="btn-group" role="group" aria-label="Toggle buttons">
+      <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btncheck1">Option 1</label>
+
+      <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btncheck2">Option 2</label>
+
+      <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btncheck3">Option 3</label>
+    </div>
+  </div>
+</body>
+</html>
+
+//ex-10.1
+<!-- ex10-1-navbar.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Responsive Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MyLogo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>
+
+//ex-10.2
+<!-- ex10-2-nav-tabs-pills.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Tabs and Pills</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container my-5">
+    <ul class="nav nav-tabs mb-3">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Tab 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Tab 2</a>
+      </li>
+    </ul>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Pill 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pill 2</a>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
+
+//ex-11.1
+<!-- ex11-1-profile-card.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Profile Card</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container my-5">
+    <div class="card" style="width: 18rem;">
+      <img src="https://via.placeholder.com/286x180" class="card-img-top" alt="Profile Image">
+      <div class="card-body">
+        <h5 class="card-title">Jane Doe</h5>
+        <p class="card-text">Web Developer at XYZ Corp.</p>
+        <a href="#" class="btn btn-primary">Contact</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+//ex-11.2
+<!-- ex11-2-media-object.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Media Object</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container my-5">
+    <div class="d-flex">
+      <img src="https://via.placeholder.com/100" class="me-3" alt="media-img">
+      <div>
+        <h5>Media Heading</h5>
+        <p>This is some sample content aligned to the right of the image using flexbox.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+//ex-12.1
+<!-- ex12-1-spacing.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Spacing Utilities</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-4">
+    <div class="bg-light m-3 p-2">
+      <h5 class="mt-4">Section with Margin and Padding</h5>
+      <p class="py-5">This section uses Bootstrap spacing classes like m-3, mt-4, p-2, and py-5.</p>
+    </div>
+  </div>
+</body>
+</html>
+
+//ex-12.2
+<!-- ex12-2-pricing-section.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Pricing Section</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container my-5">
+    <div class="row text-center">
+      <div class="col-md-4 p-4">
+        <div class="border p-4 rounded">
+          <h4>Basic</h4>
+          <p class="display-6">$9</p>
+          <p>1 User, 5 Projects</p>
+          <button class="btn btn-outline-primary mt-3">Choose</button>
+        </div>
+      </div>
+      <div class="col-md-4 p-4">
+        <div class="border p-4 rounded">
+          <h4>Pro</h4>
+          <p class="display-6">$29</p>
+          <p>10 Users, 50 Projects</p>
+          <button class="btn btn-primary mt-3">Choose</button>
+        </div>
+      </div>
+      <div class="col-md-4 p-4">
+        <div class="border p-4 rounded">
+          <h4>Enterprise</h4>
+          <p class="display-6">$99</p>
+          <p>Unlimited Users & Projects</p>
+          <button class="btn btn-outline-dark mt-3">Choose</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+//ex-13.1
+<!-- ex13-1-dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Dashboard Colors</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container my-4">
+    <div class="p-3 mb-3 bg-primary text-white">Primary Panel</div>
+    <div class="p-3 mb-3 bg-warning text-dark">Warning Panel</div>
+    <div class="p-3 mb-3 bg-danger text-white">Danger Panel</div>
+    <div class="p-3 mb-3 bg-success text-white">Success Panel</div>
+  </div>
+</body>
+</html>
+
+//ex-13.2
+<!-- ex13-2-gradient-bg.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Gradient Background</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-dark bg-gradient text-white">
+  <div class="container py-5 text-center">
+    <h1>Welcome</h1>
+    <p class="lead">This is a gradient background using Bootstrap utilities.</p>
+  </div>
+</body>
+</html>
+
+//ex-14.1
+<!-- ex14-1-visibility.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Responsive Display</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-4">
+    <div class="d-none d-md-block bg-info p-3 text-white">Visible from md and up</div>
+    <div class="d-lg-flex bg-warning p-3 mt-2">Flex container only on large and up</div>
+  </div>
+</body>
+</html>
+
+//ex-14.2
+<!-- ex14-2-responsive-sidebar.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sidebar Display</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 d-none d-md-block bg-light p-3">Sidebar (visible on md+)</div>
+      <div class="col-md-9 col-12 p-3">Main Content</div>
+    </div>
+  </div>
+</body>
+</html>
+
+//ex-15.1
+<!-- ex15-1-borders.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Image Borders</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container my-4 text-center">
+    <img src="https://via.placeholder.com/150" class="border border-primary border-3 rounded-circle" alt="Profile">
+  </div>
+</body>
+</html>
+
+//ex-15.2
+<!-- ex15-2-card-shadow.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Card Shadow</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container my-5">
+    <div class="card shadow-lg rounded-pill p-4">
+      <div class="card-body text-center">
+        <h5 class="card-title">Stylish Card</h5>
+        <p class="card-text">With shadow and rounded-pill utility classes.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+//ex-16.1
+<!-- ex16-1-fixed-footer.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Fixed Footer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>body { padding-bottom: 60px; }</style>
+</head>
+<body>
+  <div class="container py-5">
+    <h2>Scroll down to see the footer</h2>
+  </div>
+  <footer class="bg-dark text-white text-center py-3 position-fixed bottom-0 w-100">
+    Fixed Footer Content
+  </footer>
+</body>
+</html>
+
+//ex-16.2
+<!-- ex16-2-overlay-badge.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Overlay Badge</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .image-wrapper {
+      position: relative;
+      width: 200px;
+    }
+    .badge-overlay {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container my-5">
+    <div class="image-wrapper">
+      <img src="https://via.placeholder.com/200" class="img-fluid" alt="Image">
+      <span class="badge bg-danger badge-overlay">New</span>
+    </div>
+  </div>
+</body>
+</html>
+
+//ex-17.1
+<!-- ex17-1-icons-footer.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Footer Icons</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+  <footer class="bg-dark text-white text-center p-4">
+    <i class="bi bi-facebook mx-2"></i>
+    <i class="bi bi-twitter mx-2"></i>
+    <i class="bi bi-instagram mx-2"></i>
+    <p class="mt-3">© 2025 MyCompany</p>
+  </footer>
+</body>
+</html>
+
+//ex-17.2
+<!-- ex17-2-icon-buttons.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Icon Buttons</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container text-center my-5">
+    <button class="btn btn-primary"><i class="bi bi-pencil"></i></button>
+    <button class="btn btn-danger"><i class="bi bi-trash"></i></button>
+    <button class="btn btn-success"><i class="bi bi-check"></i></button>
+  </div>
+</body>
+</html>
+
+//ex-18.1
+<!-- ex18-1-modal.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Modal Example</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container my-5">
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Launch Modal</button>
+
+    <div class="modal fade" id="myModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal Title</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p>This is a Bootstrap modal popup.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+//ex-18.2
+<!-- ex18-2-accordion.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Accordion</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container my-5">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+            Accordion Item #1
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show">
+          <div class="accordion-body">This is the first item's content.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+//ex-19.1
+npm init -y
+npm install bootstrap@5 sass
+Then create a .scss file:
+// custom.scss
+@import "node_modules/bootstrap/scss/bootstrap";
+Compile using:
+npx sass custom.scss custom.css
+
+//ex-19.2
+// custom.scss
+$primary: #6f42c1;
+$border-radius: 1rem;
+@import "node_modules/bootstrap/scss/bootstrap";
+Then compile:
+npx sass custom.scss custom.css
