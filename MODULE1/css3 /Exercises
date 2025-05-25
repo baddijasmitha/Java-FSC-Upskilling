@@ -1,0 +1,683 @@
+//task-1
+ Inline vs.Internal vs. External CSS
+ HTML (index.html)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Community Event Portal</title>
+  <!-- Internal CSS using <style> -->
+  <style>
+    /* Body background */
+    body {
+      background-color: #f0f8ff;
+    }
+  </style>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Inline CSS for heading -->
+  <h1 style="color: red;">Welcome to the Community Event Portal</h1>
+  <h2 id="mainHeader">Upcoming Events</h2>
+  <div class="eventCard">
+    <h3>Park Cleanup</h3>
+    <p>Join us this weekend for a community cleanup event!</p>
+  </div>
+</body>
+</html>
+
+External CSS (styles.css)
+/* Header styles */
+#mainHeader {
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Event card styles */
+.eventCard {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #e6f7ff;
+}
+
+//task2
+CSS Syntax and Comments
+HTML (index.html)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Community Event Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1 id="mainHeader">Community Event Portal</h1>
+
+  <button class="cta-button">Join Now</button>
+
+  <div class="eventCard">
+    <h3>Food Drive</h3>
+    <p>Help provide meals to families in need.</p>
+  </div>
+
+</body>
+</html>
+
+External CSS (styles.css)
+/* ==========================
+   Header Styles
+   ========================== */
+#mainHeader {
+  font-size: 2.5rem;
+  color: #222;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ==========================
+   Style for main CTA button
+   ========================== */
+.cta-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Hover effect for button */
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* ==========================
+   Event Card Styling
+   ========================== */
+.eventCard {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+//task 3: Selectors Playground
+ HTML (index.html)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Selectors Playground</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1 id="mainHeader">Community Events</h1>
+
+  <h2>Event Highlights</h2>
+
+  <div class="eventCard">
+    <h3>Music Night</h3>
+    <p>Enjoy live performances from local bands.</p>
+  </div>
+
+  <div class="eventCard">
+    <h3>Art Showcase</h3>
+    <p>See amazing artwork by local artists.</p>
+  </div>
+
+</body>
+</html>
+
+//External CSS (styles.css)
+/* Universal selector to reset margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Element selector to style all <h2> */
+h2 {
+  font-size: 1.8rem;
+  color: #1a237e;
+  margin: 20px 0;
+}
+
+/* ID selector for banner */
+#mainHeader {
+  background-color: #4caf50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Class selector for event containers */
+.eventCard {
+  border: 1px solid #ccc;
+  margin: 15px;
+  padding: 15px;
+  background-color: #e3f2fd;
+}
+
+/* Grouping selector for <h3> and <p> inside event cards */
+.eventCard h3,
+.eventCard p {
+  margin-bottom: 10px;
+}
+
+//task 4: Color & Background Styling
+HTML (index.html)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Color & Background Styling</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1 class="section-header">City Council Themed Events</h1>
+
+  <div class="eventCard">
+    <h3>Volunteer Meetup</h3>
+    <p>Connect with fellow volunteers and plan your next move.</p>
+  </div>
+
+</body>
+</html>
+
+//External CSS (styles.css)
+/* Body with background image and fallback color */
+body {
+  background-color: #f0f0f0; /* Fallback color */
+  background-image: url('background.jpg'); /* Replace with your image path */
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+
+/* Text and background colors using HEX and RGBA */
+.eventCard {
+  background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent background */
+  color: #333333; /* HEX text color */
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Gradient background for section headers */
+.section-header {
+  background: linear-gradient(to right, #4caf50, #81c784);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+//task 5: Typography – Fonts and Text
+ HTML (index.html)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Typography Styling</title>
+
+  <!-- Import Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1 class="main-title">Community Bulletin</h1>
+
+  <p class="description">
+    Stay informed with the latest news, upcoming events, and community stories. Get involved and make a difference!
+  </p>
+
+  <div class="eventCard">
+    <h3>Book Club</h3>
+    <p>Join our monthly reading circle and discuss thought-provoking novels.</p>
+  </div>
+
+</body>
+</html>
+
+//External CSS (styles.css)
+/* Apply imported Google Font */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Title styles */
+.main-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 30px;
+}
+
+/* Description paragraph styles */
+.description {
+  font-size: 1.2rem;
+  font-style: italic;
+  line-height: 1.6;
+  text-align: justify;
+  margin: 20px;
+}
+
+/* Event card text styling */
+.eventCard h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.eventCard p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+//task 6: Link and List Styling
+ HTML (index.html)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Link & List Styling</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="nav-menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <h2>Useful Links</h2>
+  <ul class="info-list">
+    <li><a href="#">Volunteer Signup</a></li>
+    <li><a href="#">Community Guidelines</a></li>
+    <li><a href="#">Event Calendar</a></li>
+  </ul>
+
+</body>
+</html>
+
+//External CSS (styles.css)
+/* Link styling */
+a:link {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #5a5a5a;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+a:active {
+  color: #ff5722;
+}
+
+/* Remove bullets and style nav list */
+.nav-menu ul {
+  list-style-type: none;
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu li {
+  padding: 10px 15px;
+  margin: 5px;
+  background-color: #e0f7fa;
+  border-radius: 5px;
+}
+
+/* Info list styling */
+.info-list {
+  list-style-type: square;
+  list-style-position: outside;
+  padding-left: 20px;
+}
+
+.info-list li {
+  margin: 10px 0;
+  padding-left: 5px;
+}
+
+//task 7: Table Styling
+HTML (index.html)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Admin Table</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h2>Event Administration</h2>
+
+  <table class="event-table">
+    <thead>
+      <tr>
+        <th>Event Name</th>
+        <th>Date</th>
+        <th>Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Food Drive</td>
+        <td>June 10</td>
+        <td>Community Center</td>
+      </tr>
+      <tr>
+        <td>Art Workshop</td>
+        <td>June 15</td>
+        <td>Library Hall</td>
+      </tr>
+      <tr>
+        <td>Park Cleanup</td>
+        <td>June 20</td>
+        <td>Central Park</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
+
+//External CSS (styles.css)
+/* Table styling */
+.event-table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Header and cell styling */
+.event-table th,
+.event-table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  background-color: #f9f9f9;
+}
+
+/* Zebra striping with nth-child */
+.event-table tbody tr:nth-child(even) {
+  background-color: #e0f7fa;
+}
+
+/* Table header background */
+.event-table thead {
+  background-color: #007BFF;
+  color: white;
+}
+
+//task 8: Box Model & Layout Control
+ HTML (index.html)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Box Model & Layout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="eventCard selected">
+    <h3>Local Market Day</h3>
+    <p>Support local vendors and discover handmade goods!</p>
+  </div>
+
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" class="input-field">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" class="input-field">
+  </form>
+
+  <p class="hidden-box">You can't see me.</p>
+  <p class="gone-box">I'm removed from the layout.</p>
+
+</body>
+</html>
+
+// External CSS (styles.css)
+/* Box model control for .eventCard */
+.eventCard {
+  border: 2px solid #4caf50;
+  padding: 20px;
+  margin: 30px;
+  background-color: #e8f5e9;
+  border-radius: 8px;
+}
+
+/* Outline to highlight selected card */
+.selected {
+  outline: 3px dashed #ff9800;
+}
+
+/* Style form input fields */
+.input-field {
+  display: block;
+  margin: 10px 0 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Visibility vs. Display */
+.hidden-box {
+  visibility: hidden; /* takes up space, but invisible */
+}
+
+.gone-box {
+  display: none; /* completely removed from layout */
+}
+
+//task 9: Multiple Columns in Text
+HTML (index.html)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Community Bulletin - Multi-column</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <section class="news-article">
+    <h2>Community Bulletin</h2>
+    <p>
+      The city is buzzing with excitement as new community programs are launched across various neighborhoods. Residents are encouraged to participate in upcoming events such as the green space revitalization project and neighborhood safety training.
+      <br><br>
+      Meanwhile, the local school district has announced expanded extracurricular activities for students of all ages. Volunteer opportunities are also open for mentoring programs and senior outreach.
+      <br><br>
+      Stay connected through our portal for continuous updates, resources, and ways to get involved!
+    </p>
+  </section>
+
+</body>
+</html>
+
+//External CSS (styles.css)
+/* Multi-column layout for news article */
+.news-article {
+  width: 80%;
+  margin: 30px auto;
+  column-count: 2;
+  column-gap: 30px;
+  column-rule: 1px solid gray;
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+}
+
+.news-article h2 {
+  column-span: all;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+//task 10: Responsive Web Design with Media Queries
+HTML (index.html)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="#">Home</a>
+    <a href="#">Events</a>
+    <a href="#">News</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="responsive-section">
+    <img src="event.jpg" alt="Event" class="responsive-image">
+    <p class="responsive-text">
+      Welcome to the Local Community Event Portal! Here you’ll find the latest activities and updates for your area.
+    </p>
+  </section>
+
+</body>
+</html>
+
+//External CSS (styles.css)
+/* Base layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.responsive-section {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.responsive-image {
+  width: 40%;
+  max-width: 300px;
+  height: auto;
+}
+
+.responsive-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .responsive-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .responsive-image {
+    width: 80%;
+  }
+
+  .responsive-text {
+    font-size: 1rem;
+  }
+}
+
+/* Flexible layout using % and vw/vh */
+.responsive-section {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  min-height: 50vh;
+}
+
+//task 11
+ Debugging and Testing with DevTools and VS Code based on the given scenario:
+
+Scenario:
+Users report layout issues on smaller screens.
+
+Objective:
+Use Chrome DevTools and VS Code to test styles and debug layout problems.
+
+Steps:
+1. Open Chrome DevTools
+Right-click on the page → click Inspect
+
+OR press Ctrl + Shift + I (Windows/Linux) or Cmd + Option + I (Mac)
+
+2. Simulate Different Screen Sizes
+Click on the device toolbar icon (top-left of DevTools panel) or press Ctrl + Shift + M
+Choose devices from the top dropdown (e.g., iPhone, iPad, Galaxy)
+Or manually set a custom screen width to test responsiveness
+
+3. Inspect Applied Styles
+Use the Elements tab
+Click on any element to view its CSS rules
+In the Styles pane, you can:
+See what CSS is being applied
+Override or change values live (e.g., change width, padding, flex-direction, etc.)
+Enable/disable rules by checking/unchecking them
+
+4. Test Layout Fixes
+Try modifying values directly in DevTools to see if the layout improves
+Example: Change display: flex to display: block
+Resize elements to fit smaller screens
+Once fixed, apply those changes in your source code using VS Code
+
+5. Check External CSS is Loaded
+Go to the Network tab
+Reload the page (Ctrl + R or right-click → Reload)
+Filter by "CSS" or look for your CSS files (e.g., style.css, bootstrap.css)
+Confirm:
+The file appears in the list
+Status is 200 OK (means loaded successfully)
+No red errors for missing files
