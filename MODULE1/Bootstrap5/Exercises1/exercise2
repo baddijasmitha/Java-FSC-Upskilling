@@ -1,0 +1,368 @@
+//ex-1.1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bootstrap CDN</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-primary">Bootstrap 5 via CDN</h1>
+    <p class="lead">This page uses Bootstrap loaded from a CDN.</p>
+  </div>
+</body>
+</html>
+
+//ex-1.2
+<!-- ex1-2-local.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bootstrap Local</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-success">Bootstrap 5 from Local Files</h1>
+    <p class="lead">This example uses locally stored Bootstrap CSS and JS.</p>
+  </div>
+
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+//ex-2.1
+CSS Folder: Contains compiled .css and .min.css stylesheets.
+
+JS Folder: Contains compiled Bootstrap JavaScript including bootstrap.bundle.min.js which has Popper included.
+
+Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
+
+//ex-2.2
+<!-- ex2-2-bundle-js.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bootstrap Bundle JS</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="text-info">Bootstrap with bundle JS</h2>
+    <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">Toggle Content</button>
+    <div id="demo" class="collapse mt-3">
+      <p>This is collapsible content using Bootstrap's JS bundle.</p>
+    </div>
+  </div>
+
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+//ex-3.1
+<!-- ex3-1-grid-responsive.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Responsive Grid</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4 bg-primary text-white p-3">Column 1</div>
+      <div class="col-12 col-sm-6 col-md-4 bg-success text-white p-3">Column 2</div>
+      <div class="col-12 col-sm-12 col-md-4 bg-danger text-white p-3">Column 3</div>
+    </div>
+  </div>
+</body>
+</html>
+
+//ex-3.2
+<!-- ex3-2-grid-basic.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Grid Basics</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-6 bg-warning p-3">Left Half</div>
+      <div class="col-md-6 bg-info p-3">Right Half</div>
+    </div>
+  </div>
+</body>
+</html>
+
+//ex-4.1
+<!-- ex4-1-sidebar-layout.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Sidebar Layout</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-3 bg-light p-3">Sidebar</div>
+      <div class="col-md-9 bg-white border-start p-3">Main Content Area</div>
+    </div>
+  </div>
+</body>
+</html>
+
+//ex-4.2
+<!-- ex4-2-four-cols.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Four Columns</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-sm-3 bg-primary text-white p-2">Col 1</div>
+      <div class="col-sm-3 bg-secondary text-white p-2">Col 2</div>
+      <div class="col-sm-3 bg-success text-white p-2">Col 3</div>
+      <div class="col-sm-3 bg-danger text-white p-2">Col 4</div>
+    </div>
+  </div>
+</body>
+</html>
+
+//ex-5.1
+<!-- ex5-1-align-center.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Center Aligned Row</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container vh-100">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col-md-6 text-center bg-light p-5 border rounded">
+        <h3>Centered Box</h3>
+        <p>This content is centered vertically and horizontally using Flex utilities.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+//ex-5.2
+<!-- ex5-2-reorder-cols.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Reorder Columns</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-6 order-md-2 bg-warning p-3">Column 1 (Second on Desktop)</div>
+      <div class="col-md-6 order-md-1 bg-info p-3">Column 2 (First on Desktop)</div>
+    </div>
+  </div>
+</body>
+</html>
+
+//ex-6.1
+<!-- ex6-1-flex-navbar.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Flex Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="d-flex flex-column flex-md-row justify-content-between align-items-center p-3 bg-dark text-white">
+    <div class="mb-2 mb-md-0">Logo</div>
+    <div class="d-flex gap-3">
+      <a href="#" class="text-white text-decoration-none">Home</a>
+      <a href="#" class="text-white text-decoration-none">About</a>
+      <a href="#" class="text-white text-decoration-none">Contact</a>
+    </div>
+  </nav>
+</body>
+</html>
+
+//ex-6.2
+<!-- ex6-2-card-flex.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Card Flex Layout</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-4">
+    <div class="card d-flex flex-row justify-content-between align-items-center p-3">
+      <div>
+        <h5 class="card-title">Card Title</h5>
+        <p class="card-text">Aligned using justify-content and align-items.</p>
+      </div>
+      <button class="btn btn-primary">Action</button>
+    </div>
+  </div>
+</body>
+</html>
+
+//ex-7.1
+<!-- ex7-1-typography.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Typography Utilities</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container my-5">
+    <h1 class="display-1">Display Heading</h1>
+    <p class="lead">This is a lead paragraph using Bootstrap's typography utilities.</p>
+    <p class="text-muted">This text is muted.</p>
+    <p class="fw-bold">This text is bold.</p>
+    <p class="fst-italic">This text is italic.</p>
+  </div>
+</body>
+</html>
+
+//ex-7.2
+<!-- ex7-2-text-transform.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Text Transform</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container my-5">
+    <p class="text-uppercase">uppercase text</p>
+    <p class="text-lowercase">LOWERCASE TEXT</p>
+    <p class="text-capitalize">this is capitalized text</p>
+  </div>
+</body>
+</html>
+
+//ex-8.1
+<!-- ex8-1-registration-form.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Registration Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container my-5">
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email">
+      </div>
+      <div class="mb-3 input-group">
+        <span class="input-group-text">@</span>
+        <input type="text" class="form-control" placeholder="Username">
+      </div>
+      <div class="form-check mb-3">
+        <input type="checkbox" class="form-check-input" id="terms">
+        <label class="form-check-label" for="terms">Agree to terms</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+  </div>
+</body>
+</html>
+
+//ex-8.2
+<!-- ex8-2-login-floating.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Login Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container my-5">
+    <form class="w-50 mx-auto">
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+      </div>
+      <button class="btn btn-success w-100" type="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>
+
+//ex-9.1
+<!-- ex9-1-buttons.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Buttons</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container my-5">
+    <h4>Contextual Buttons</h4>
+    <button class="btn btn-primary">Primary</button>
+    <button class="btn btn-secondary">Secondary</button>
+    <button class="btn btn-success">Success</button>
+    <button class="btn btn-danger">Danger</button>
+    <button class="btn btn-warning">Warning</button>
+    <button class="btn btn-info">Info</button>
+    <button class="btn btn-light">Light</button>
+    <button class="btn btn-dark">Dark</button>
+
+    <h4 class="mt-4">Outline Buttons</h4>
+    <button class="btn btn-outline-primary">Primary</button>
+    <button class="btn btn-outline-danger">Danger</button>
+    <button class="btn btn-outline-success">Success</button>
+  </div>
+</body>
+</html>
