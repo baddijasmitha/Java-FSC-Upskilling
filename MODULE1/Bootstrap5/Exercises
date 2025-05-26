@@ -15,6 +15,7 @@
 </body>
 </html>
 
+
 //ex-1.2
 <!-- ex1-2-local.html -->
 <!DOCTYPE html>
@@ -34,6 +35,7 @@
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
 
 //ex-2.1
 CSS Folder: Contains compiled .css and .min.css stylesheets.
@@ -65,6 +67,7 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
 </body>
 </html>
 
+
 //ex-3.1
 <!-- ex3-1-grid-responsive.html -->
 <!DOCTYPE html>
@@ -86,6 +89,7 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
 </body>
 </html>
 
+
 //ex-3.2
 <!-- ex3-2-grid-basic.html -->
 <!DOCTYPE html>
@@ -106,6 +110,7 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
 </body>
 </html>
 
+
 //ex-4.1
 <!-- ex4-1-sidebar-layout.html -->
 <!DOCTYPE html>
@@ -125,6 +130,7 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
   </div>
 </body>
 </html>
+
 
 //ex-4.2
 <!-- ex4-2-four-cols.html -->
@@ -148,6 +154,7 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
 </body>
 </html>
 
+
 //ex-5.1
 <!-- ex5-1-align-center.html -->
 <!DOCTYPE html>
@@ -170,6 +177,7 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
 </body>
 </html>
 
+
 //ex-5.2
 <!-- ex5-2-reorder-cols.html -->
 <!DOCTYPE html>
@@ -189,6 +197,7 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
   </div>
 </body>
 </html>
+
 
 //ex-6.1
 <!-- ex6-1-flex-navbar.html -->
@@ -211,6 +220,7 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
   </nav>
 </body>
 </html>
+
 
 //ex-6.2
 <!-- ex6-2-card-flex.html -->
@@ -235,6 +245,7 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
 </body>
 </html>
 
+
 //ex-7.1
 <!-- ex7-1-typography.html -->
 <!DOCTYPE html>
@@ -256,6 +267,7 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
 </body>
 </html>
 
+
 //ex-7.2
 <!-- ex7-2-text-transform.html -->
 <!DOCTYPE html>
@@ -274,6 +286,7 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
   </div>
 </body>
 </html>
+
 
 //ex-8.1
 <!-- ex8-1-registration-form.html -->
@@ -310,6 +323,7 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
 </body>
 </html>
 
+
 //ex-8.2
 <!-- ex8-2-login-floating.html -->
 <!DOCTYPE html>
@@ -336,6 +350,7 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
   </div>
 </body>
 </html>
+
 
 //ex-9.1
 <!-- ex9-1-buttons.html -->
@@ -366,6 +381,7 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
   </div>
 </body>
 </html>
+
 
 //ex-9.2
 <!-- ex9-2-button-groups.html -->
@@ -401,6 +417,7 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
 </body>
 </html>
 
+
 //ex-10.1
 <!-- ex10-1-navbar.html -->
 <!DOCTYPE html>
@@ -433,6 +450,7 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
   </nav>
 </body>
 </html>
+
 
 //ex-10.2
 <!-- ex10-2-nav-tabs-pills.html -->
@@ -467,6 +485,7 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
 </body>
 </html>
 
+
 //ex-11.1
 <!-- ex11-1-profile-card.html -->
 <!DOCTYPE html>
@@ -491,6 +510,7 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
 </body>
 </html>
 
+
 //ex-11.2
 <!-- ex11-2-media-object.html -->
 <!DOCTYPE html>
@@ -514,6 +534,7 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
 </body>
 </html>
 
+
 //ex-12.1
 <!-- ex12-1-spacing.html -->
 <!DOCTYPE html>
@@ -533,6 +554,7 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
   </div>
 </body>
 </html>
+
 
 //ex-12.2
 <!-- ex12-2-pricing-section.html -->
@@ -576,6 +598,7 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
 </body>
 </html>
 
+
 //ex-13.1
 <!-- ex13-1-dashboard.html -->
 <!DOCTYPE html>
@@ -596,6 +619,7 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
 </body>
 </html>
 
+
 //ex-13.2
 <!-- ex13-2-gradient-bg.html -->
 <!DOCTYPE html>
@@ -614,6 +638,7 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
 </body>
 </html>
 
+
 //ex-14.1
 <!-- ex14-1-visibility.html -->
 <!DOCTYPE html>
@@ -631,6 +656,7 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
   </div>
 </body>
 </html>
+
 
 //ex-14.2
 <!-- ex14-2-responsive-sidebar.html -->
@@ -652,6 +678,7 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
 </body>
 </html>
 
+
 //ex-15.1
 <!-- ex15-1-borders.html -->
 <!DOCTYPE html>
@@ -668,6 +695,7 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
   </div>
 </body>
 </html>
+
 
 //ex-15.2
 <!-- ex15-2-card-shadow.html -->
@@ -691,6 +719,7 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
 </body>
 </html>
 
+
 //ex-16.1
 <!-- ex16-1-fixed-footer.html -->
 <!DOCTYPE html>
@@ -711,6 +740,7 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
   </footer>
 </body>
 </html>
+
 
 //ex-16.2
 <!-- ex16-2-overlay-badge.html -->
@@ -743,6 +773,7 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
 </body>
 </html>
 
+
 //ex-17.1
 <!-- ex17-1-icons-footer.html -->
 <!DOCTYPE html>
@@ -764,6 +795,7 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
 </body>
 </html>
 
+
 //ex-17.2
 <!-- ex17-2-icon-buttons.html -->
 <!DOCTYPE html>
@@ -783,6 +815,7 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
   </div>
 </body>
 </html>
+
 
 //ex-18.1
 <!-- ex18-1-modal.html -->
@@ -817,6 +850,7 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
 </body>
 </html>
 
+
 //ex-18.2
 <!-- ex18-2-accordion.html -->
 <!DOCTYPE html>
@@ -847,6 +881,7 @@ Icons (optional): Contains SVG icons used in UIs, provided by Bootstrap Icons.
 </body>
 </html>
 
+
 //ex-19.1
 npm init -y
 npm install bootstrap@5 sass
@@ -855,6 +890,7 @@ Then create a .scss file:
 @import "node_modules/bootstrap/scss/bootstrap";
 Compile using:
 npx sass custom.scss custom.css
+
 
 //ex-19.2
 // custom.scss
