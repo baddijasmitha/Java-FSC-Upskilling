@@ -1,1 +1,257 @@
+Project Theme: Local Community Event Portal
+A local city council wants a lightweight, browser-based portal to help residents register for
+events, check locations, and access basic services.
 
+// 1. HTML5 Base Template
+
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Community Event Portal</title>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav></nav>
+
+  <!-- Main -->
+  <main></main>
+
+  <!-- Footer -->
+  <footer></footer>
+</body>
+</html>
+
+
+// 2. Navigation and Linking
+
+<nav>
+  <a href="#home">Home</a> |
+  <a href="#events">Events</a> |
+  <a href="#contact">Contact</a> |
+  <a href="help.html" target="_blank">Help</a>
+</nav>
+<section id="home">
+  <h2>Welcome</h2>
+</section>
+<section id="events">
+  <h2>Events</h2>
+</section>
+<section id="contact">
+  <h2>Contact</h2>
+</section>
+
+
+//3. Welcome Message with Styling and ID/Class
+
+<style>
+  #welcomeBanner {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+  }
+  .highlight {
+    background-color: yellow;
+    font-weight: bold;
+  }
+</style>
+
+<div id="welcomeBanner">
+  Welcome back, user! <span style="color: red; font-weight: bold;">Special Offer!</span>
+</div>
+<p class="highlight">Check out upcoming events!</p>
+
+
+//4. Image Gallery for Community Events
+
+<style>
+  .gallery-img {
+    border: 2px solid #ccc;
+    width: 150px;
+    height: 100px;
+  }
+</style>
+<table>
+  <caption>Past Community Events</caption>
+  <tr>
+    <td><img src="event1.jpg" class="gallery-img" alt="Music Night" title="Music Night"></td>
+    <td><img src="event2.jpg" class="gallery-img" alt="Art Show" title="Art Show"></td>
+    <td><img src="event3.jpg" class="gallery-img" alt="Tech Talk" title="Tech Talk"></td>
+  </tr>
+  <tr>
+    <td><img src="event4.jpg" class="gallery-img" alt="Food Festival" title="Food Festival"></td>
+    <td><img src="event5.jpg" class="gallery-img" alt="Book Fair" title="Book Fair"></td>
+    <td><img src="event6.jpg" class="gallery-img" alt="Dance Fest" title="Dance Fest"></td>
+  </tr>
+</table>
+
+
+//5. Event Registration Form
+
+<style>
+  form {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+  }
+</style>
+<form onsubmit="showMessage(event)">
+  <label>Name: <input type="text" name="name" placeholder="Your Name" required autofocus></label><br>
+  <label>Email: <input type="email" name="email" placeholder="you@example.com" required></label><br>
+  <label>Date: <input type="date" name="date" required></label><br>
+  <label>Event Type:
+    <select name="eventType" required>
+      <option>Music</option>
+      <option>Workshop</option>
+    </select>
+  </label><br>
+  <label>Message:<br>
+    <textarea name="message"></textarea>
+  </label><br>
+  <button type="submit">Register</button>
+  <output id="confirmationMsg"></output>
+</form>
+<script>
+function showMessage(e) {
+  e.preventDefault();
+  document.getElementById("confirmationMsg").textContent = "Registration successful!";
+}
+</script>
+
+
+//6. Event Feedback with Events Handling
+
+<form>
+  <label>Phone:
+    <input type="text" id="phone" onblur="validatePhone(this)">
+  </label><br>
+
+  <label>Select Event:
+    <select onchange="showFee(this.value)">
+      <option value="Free">Community Talk</option>
+      <option value="10">Workshop - $10</option>
+    </select>
+  </label><br>
+  <div id="feeDisplay"></div>
+
+  <button type="button" onclick="confirmSubmit()">Submit</button><br>
+
+  <img src="event.jpg" ondblclick="enlargeImage(this)" width="150" />
+
+  <br><label>Feedback:</label><br>
+  <textarea onkeydown="countChars(this)" id="feedback"></textarea>
+  <div id="charCount"></div>
+</form>
+
+<script>
+function validatePhone(input) {
+  if (!/^\d{10}$/.test(input.value)) {
+    alert("Enter a valid 10-digit number.");
+  }
+}
+
+function showFee(value) {
+  document.getElementById("feeDisplay").textContent = "Fee: $" + value;
+}
+
+function confirmSubmit() {
+  alert("Form submitted!");
+}
+
+function enlargeImage(img) {
+  img.style.width = "300px";
+}
+
+function countChars(el) {
+  document.getElementById("charCount").textContent = `Characters: ${el.value.length}`;
+}
+</script>
+
+
+// 7. Video Invite with Media Events
+
+<video id="promoVideo" width="320" controls oncanplay="videoReady()">
+  <source src="event-promo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<div id="videoMsg"></div>
+
+<script>
+function videoReady() {
+  document.getElementById("videoMsg").textContent = "Video ready to play!";
+}
+
+window.onbeforeunload = function () {
+  return "Are you sure you want to leave the form?";
+};
+</script>
+
+
+//8. Saving User Preferences
+
+<select id="eventTypeSelect" onchange="savePreference(this.value)">
+  <option>Music</option>
+  <option>Workshop</option>
+</select>
+
+<button onclick="clearPreferences()">Clear Preferences</button>
+
+<script>
+function savePreference(value) {
+  localStorage.setItem("preferredEvent", value);
+}
+
+window.onload = function () {
+  const saved = localStorage.getItem("preferredEvent");
+  if (saved) {
+    document.getElementById("eventTypeSelect").value = saved;
+  }
+};
+
+function clearPreferences() {
+  localStorage.clear();
+  sessionStorage.clear();
+  alert("Preferences cleared.");
+}
+</script>
+
+
+// 9. Geolocation for Event Mapping
+
+<button onclick="findEvents()">Find Nearby Events</button>
+<div id="locationDisplay"></div>
+
+<script>
+function findEvents() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      position => {
+        const { latitude, longitude } = position.coords;
+        document.getElementById("locationDisplay").textContent =
+          `Your Location: ${latitude}, ${longitude}`;
+      },
+      error => {
+        alert("Geolocation error: " + error.message);
+      },
+      { enableHighAccuracy: true, timeout: 10000 }
+    );
+  } else {
+    alert("Geolocation not supported.");
+  }
+}
+</script>
+
+
+//10. Debugging with Chrome DevTools
+
+Right-click → Inspect Element → modify HTML/CSS live.
+Use the Console tab to see console.log() outputs.
+Go to Sources tab → add breakpoints in script and step through lines.
+//JavaScript
+console.log("Debug: Script running");
+function debugExample() {
+  const message = "Hello World";
+  debugger; // Set a manual breakpoint
+  console.log(message);
+}
